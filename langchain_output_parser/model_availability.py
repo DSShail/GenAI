@@ -2,7 +2,7 @@ from huggingface_hub import model_info
 
 def check_availability():
     try:
-        info=model_info('google/magenta-realtime',token='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')
+        info=model_info('google/magenta-realtime',token='')
         print(f"doc: {info.__doc__}")
         print(f"Pipeline tag: {info.pipeline_tag}")
         print(f"Library: {info.library_name}")
