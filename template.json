@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length",
+        "research_paper",
+        "style"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\n    You are tasked with summarizing or analyzing the research paper titled: **{research_paper}**.\n\nThe summary/analysis should be written in the style of: **{style}**.\n\nThe output should be of the following length: **{length}**.\n\nPlease make sure to:\n\n- Adhere to the selected style.\n- Maintain accuracy and avoid generating false or misleading information.\n- Structure the content logically based on the selected length.\n\nNow proceed with the task.\n\n    ",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
