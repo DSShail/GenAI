@@ -26,3 +26,7 @@ python-dotenv
 #Machine learning utilities
 numpy
 scikit-learn
+
+
+#for PDF docs
+pypdf

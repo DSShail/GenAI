@@ -15,11 +15,21 @@ splitter=CharacterTextSplitter(
     #seperator='' 
 )
 
+#demonstration of length-based text splitter
+print('***********************demonstration of lenght-based text splitter')
 text='''
     Agentic AI refers to artificial intelligence systems that possess the capacity to act autonomously, make decisions, and pursue goals independently. Unlike traditional AI, which typically follows predefined instructions, agentic AI can initiate actions, adapt to changing environments, and optimize outcomes based on its objectives. These systems often incorporate elements like reinforcement learning, planning algorithms, and reasoning capabilities to simulate agency. Agentic AI holds promise for complex tasks such as robotics, supply chain optimization, and personalized education. However, its development raises ethical concerns around accountability, control, and alignment with human values, making responsible design and oversight critically important.
 '''
-
 result=splitter.split_text(text)
-
 print(result)
+
+#demonstration of lenght-based document splitter
+print('***********************demonstration of lenght-based document splitter')
+#loading the docs
+docs=loader.load()
+
+#splitting the docs
+doc_results=splitter.split_documents(docs)
+
+print(doc_results)
 
